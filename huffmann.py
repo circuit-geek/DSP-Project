@@ -14,7 +14,6 @@ class Node:
 """ A helper function to print the codes of symbols by traveling Huffman Tree"""
 codes = dict()
 
-
 def Calculate_Codes(node, val=''):
     # huffman code for current node
     newVal = val + str(node.code)
@@ -130,7 +129,7 @@ def Huffman_Decoding(encoded_data, huffman_tree):
 
 
 """ First Test """
-data = "165 165 165 165 165 165 154 154 154"
+data = "240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240"
 print(data)
 encoding, tree = Huffman_Encoding(data)
 print("Encoded output", encoding)
